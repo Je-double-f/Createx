@@ -608,14 +608,6 @@ video {
   margin: auto;
 }
 
-.mt-\[\] {
-  margin-top: ;
-}
-
-.mt-\[60px\] {
-  margin-top: 60px;
-}
-
 .mt-\[90px\] {
   margin-top: 90px;
 }
@@ -640,40 +632,16 @@ video {
   height: 400px;
 }
 
-.h-\[500px\] {
-  height: 500px;
+.w-\[100\%\] {
+  width: 100%;
 }
 
-.w-\[\] {
-  width: ;
-}
-
-.w-\[80\] {
-  width: 80;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
-.w-\[500px\] {
-  width: 500px;
-}
-
-.w-\[900px\] {
-  width: 900px;
-}
-
-.w-\[800px\] {
-  width: 800px;
+.w-\[495px\] {
+  width: 495px;
 }
 
 .w-\[700px\] {
   width: 700px;
-}
-
-.w-\[100\%\] {
-  width: 100%;
 }
 
 .max-w-\[1200px\] {
@@ -702,10 +670,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.items-start {
-  align-items: flex-start;
-}
-
 .justify-between {
   justify-content: space-between;
 }
@@ -714,12 +678,12 @@ video {
   gap: 20px;
 }
 
-.place-self-center {
-  place-self: center;
+.gap-\[5px\] {
+  gap: 5px;
 }
 
-.rounded-\[\] {
-  border-radius: ;
+.place-self-center {
+  place-self: center;
 }
 
 .rounded-\[5px\] {
@@ -734,9 +698,9 @@ video {
   border-style: none;
 }
 
-.bg-orange-600 {
+.bg-orange-200 {
   --tw-bg-opacity: 1;
-  background-color: rgb(234 88 12 / var(--tw-bg-opacity, 1));
+  background-color: rgb(254 215 170 / var(--tw-bg-opacity, 1));
 }
 
 .bg-orange-500 {
@@ -744,35 +708,12 @@ video {
   background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
 }
 
-.bg-orange-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 146 60 / var(--tw-bg-opacity, 1));
-}
-
-.bg-orange-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 186 116 / var(--tw-bg-opacity, 1));
-}
-
-.bg-orange-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 215 170 / var(--tw-bg-opacity, 1));
+.p-\[10px\] {
+  padding: 10px;
 }
 
 .p-\[30px\] {
   padding: 30px;
-}
-
-.p-\[\] {
-  padding: ;
-}
-
-.p-\[20px\] {
-  padding: 20px;
-}
-
-.p-\[10px\] {
-  padding: 10px;
 }
 
 .text-center {
