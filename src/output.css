@@ -607,6 +607,10 @@ video {
   margin-top: 50px;
 }
 
+.mt-\[300px\] {
+  margin-top: 300px;
+}
+
 .flex {
   display: flex;
 }
@@ -691,6 +695,10 @@ video {
   width: 600px;
 }
 
+.w-\[400px\] {
+  width: 400px;
+}
+
 .max-w-\[1200px\] {
   max-width: 1200px;
 }
@@ -753,6 +761,10 @@ video {
 
 .gap-\[60px\] {
   gap: 60px;
+}
+
+.gap-\[50px\] {
+  gap: 50px;
 }
 
 .place-self-center {
