@@ -604,6 +604,74 @@ video {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.left-\[\] {
+  left: ;
+}
+
+.bottom-\[\] {
+  bottom: ;
+}
+
+.bottom-\[-50px\] {
+  bottom: -50px;
+}
+
+.left-\[-50px\] {
+  left: -50px;
+}
+
+.left-\[-80px\] {
+  left: -80px;
+}
+
+.left-\[-90px\] {
+  left: -90px;
+}
+
+.left-\[-70px\] {
+  left: -70px;
+}
+
+.left-\[-65px\] {
+  left: -65px;
+}
+
+.left-\[-60px\] {
+  left: -60px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.bottom-\[-100px\] {
+  bottom: -100px;
+}
+
+.right-\[-100px\] {
+  right: -100px;
+}
+
+.right-\[-120px\] {
+  right: -120px;
+}
+
+.z-\[-1\] {
+  z-index: -1;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -661,6 +729,14 @@ video {
   height: 8px;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[450px\] {
+  height: 450px;
+}
+
 .w-\[100\%\] {
   width: 100%;
 }
@@ -699,6 +775,18 @@ video {
 
 .w-\[8px\] {
   width: 8px;
+}
+
+.w-\[810px\] {
+  width: 810px;
+}
+
+.w-\[710px\] {
+  width: 710px;
+}
+
+.w-\[750px\] {
+  width: 750px;
 }
 
 .shrink {
@@ -763,10 +851,6 @@ video {
   gap: 10px;
 }
 
-.gap-\[150px\] {
-  gap: 150px;
-}
-
 .gap-\[15px\] {
   gap: 15px;
 }
@@ -791,16 +875,12 @@ video {
   gap: 60px;
 }
 
-.gap-\[100px\] {
-  gap: 100px;
+.gap-\[15pc\] {
+  gap: 15pc;
 }
 
-.gap-\[80px\] {
-  gap: 80px;
-}
-
-.gap-\[70px\] {
-  gap: 70px;
+.gap-\[120px\] {
+  gap: 120px;
 }
 
 .gap-\[50px\] {
@@ -880,6 +960,10 @@ video {
   font-size: 16px;
 }
 
+.text-\[18px\] {
+  font-size: 18px;
+}
+
 .text-\[19px\] {
   font-size: 19px;
 }
@@ -896,12 +980,12 @@ video {
   font-size: 46px;
 }
 
-.text-\[64px\] {
-  font-size: 64px;
+.text-\[48px\] {
+  font-size: 48px;
 }
 
-.text-\[18px\] {
-  font-size: 18px;
+.text-\[64px\] {
+  font-size: 64px;
 }
 
 .font-\[400\] {
@@ -918,6 +1002,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .italic {
@@ -944,6 +1032,10 @@ video {
 .text-\[\#424551\] {
   --tw-text-opacity: 1;
   color: rgb(66 69 81 / var(--tw-text-opacity, 1));
+}
+
+.text-\[rgba\(255\2c 63\2c 58\2c 1\)\] {
+  color: rgba(255,63,58,1);
 }
 
 .text-\[rgba\(66\2c 69\2c 81\2c 1\)\] {
