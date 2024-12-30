@@ -654,6 +654,10 @@ video {
   margin-top: 90px;
 }
 
+.mb-\[50px\] {
+  margin-bottom: 50px;
+}
+
 .flex {
   display: flex;
 }
@@ -794,6 +798,10 @@ video {
   width: 23%;
 }
 
+.w-\[215px\] {
+  width: 215px;
+}
+
 .max-w-\[1200px\] {
   max-width: 1200px;
 }
@@ -824,6 +832,10 @@ video {
 
 .grid-cols-\[600px_600px\] {
   grid-template-columns: 600px 600px;
+}
+
+.grid-cols-\[55px_100px_757px_136px\] {
+  grid-template-columns: 55px 100px 757px 136px;
 }
 
 .grid-rows-\[214px_214px_214px\] {
@@ -858,6 +870,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-\[10px\] {
   gap: 10px;
 }
@@ -890,8 +906,16 @@ video {
   gap: 60px;
 }
 
+.gap-\[7px\] {
+  gap: 7px;
+}
+
 .place-self-center {
   place-self: center;
+}
+
+.justify-self-start {
+  justify-self: start;
 }
 
 .rounded-\[4px\] {
@@ -1066,6 +1090,10 @@ video {
   font-size: 64px;
 }
 
+.text-\[28px\] {
+  font-size: 28px;
+}
+
 .font-\[400\] {
   font-weight: 400;
 }
@@ -1238,6 +1266,16 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:translate-x-\[3px\]:hover {
+  --tw-translate-x: 3px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:translate-y-\[-6px\]:hover {
+  --tw-translate-y: -6px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:scale-\[1\.05\]:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1253,6 +1291,12 @@ video {
 .hover\:scale-\[1\.3\]:hover {
   --tw-scale-x: 1.3;
   --tw-scale-y: 1.3;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-\[1\.06\]:hover {
+  --tw-scale-x: 1.06;
+  --tw-scale-y: 1.06;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1278,12 +1322,20 @@ video {
   font-size: 20px;
 }
 
+.hover\:text-\[12px\]:hover {
+  font-size: 12px;
+}
+
 .hover\:font-\[800\]:hover {
   font-weight: 800;
 }
 
 .hover\:font-\[900\]:hover {
   font-weight: 900;
+}
+
+.hover\:font-\[300\]:hover {
+  font-weight: 300;
 }
 
 .hover\:text-\[\#FF3F3A\]:hover {
@@ -1333,6 +1385,18 @@ video {
 .hover\:shadow-\[5px_5px_10px_\#FF3F3A\]:hover {
   --tw-shadow: 5px 5px 10px #FF3F3A;
   --tw-shadow-colored: 5px 5px 10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-\[-5px_5px_10px_\#FF3F3A\]:hover {
+  --tw-shadow: -5px 5px 10px #FF3F3A;
+  --tw-shadow-colored: -5px 5px 10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-\[0_12px_10px_-8px_\#FF3F3A\]:hover {
+  --tw-shadow: 0 12px 10px -8px #FF3F3A;
+  --tw-shadow-colored: 0 12px 10px -8px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
