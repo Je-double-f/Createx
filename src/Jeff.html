@@ -10,7 +10,6 @@
 </head>
 <body class="font-['Lato']">
     <style>
-
         #text-gradient{
             color: transparent;
             background: radial-gradient(circle, #1E212C, #1E212C, #FF3F3A, #F75E05, #F75E05, #FF3F3A);
@@ -59,7 +58,9 @@
             transform: translate(0, -3px);
             text-shadow: 1px 12px 2px #9A9CA5;
         }
-
+        main #s4 div div button:hover{
+            background: linear-gradient(#FF3F3A, #F75E05);
+        }
         header section div button, main section div button{border-image: linear-gradient(#FF3F3A, #F75E05) 1;}
         main section .grid article:hover{border-image: linear-gradient(#FF3F3A, #F75E05) 1; border-left: none; border-bottom: none;}
     </style>
@@ -196,7 +197,7 @@
         </section>
 
         <section class="w-[80%] m-auto my-[100px] flex flex-col items-center gap-[40px]">
-            <h1 id="text-gradient" class="text-[#1E212C] text-center flex flex-col text-[46px] font-[900]"><span class="text-[16px] font-[700] tracking-[1px]">Our benefits</span>That’s how we do it</h1>
+            <h1 id="text-gradient" class="text-[#1E212C] text-center flex flex-col text-[46px] font-[900]"><span class="text-[16px] font-[700] tracking-[1px]">OUR BENEFITS</span>That’s how we do it</h1>
             <div id="s3" class="flex items-center justify-between">
                 <article class="w-[307px] h-[46px] cursor-default flex items-center justify-center gap-[10px] rounded-[4px] hover:translate-y-[-3px] hover:shadow-[0_5px_5px_#FF3F3A] transition-all duration-[0.2s] ease-out hover:border-[1px] hover:border-[#FF3F3A]">
                     <i class="hover:text-[#FF3F3A] hover:text-[20px] transition-all duration-[0.3s] ease-in-out hover:translate-y-[-3px] text-[#9A9CA5] text-[18px] fa-regular fa-star"></i>
@@ -222,6 +223,23 @@
                 </aside>
                 <img src="./Photo/illustration2.png" alt="">
             </div>
+        </section>
+
+        <section id="s4" class="relative bg-[#FDDDCF]">
+            <div class="w-[80%] m-auto py-[80px]">
+                <h1 id="text-gradient" class="text-[#1E212C] text-center flex flex-col text-[46px] font-[900]"><span class="text-[16px] font-[700] tracking-[1px]">OUR EVENTS</span>Lectures & workshops</h1>
+                <div class="grid w-[100%] rounded-[4px] py-[20px] gap-[40px] bg-white justify-center items-center grid-rows-[62px] grid-cols-[52px_100px_757px_136px]">
+                    <h1 class="text-[#FF3F3A] text-[48px] tracking-[1px] font-[900]">05</h1>
+                    <p class="flex flex-col text-[#1E212C] text-[20px] font-[700]">August <span class="text-[#787A80] text-[16px] font-[400]">11:00 – 14:00</span></p>
+                    <p class="flex flex-col text-[#1E212C] text-[20px] font-[700]">Formation of the organizational structure of the company in the face of uncertainty. <span class="text-[#787A80] text-[16px] font-[400]">Onine master-class</span></p>
+                    <button class="border-[1px] rounded-[4px] border-[#FF3F3A] text-[#FF3F3A] hover:text-white w-[136px] h-[44px]">View more</button>
+                </div>
+            </div>
+            <div>
+                <h2></h2>
+                <button></button>
+            </div>
+            <img src="./Photo/dots.png" alt="" class="absolute left-0 bottom-0">
         </section>
     </main>
 
