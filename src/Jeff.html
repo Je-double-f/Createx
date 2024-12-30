@@ -17,6 +17,18 @@
             transform: translate(2px, 3px);
             text-shadow: 10px 13px 2px black;
         }
+        main section .grid article aside h2:hover, main section .grid article aside span:hover{
+            background: linear-gradient(#FF3F3A, #F75E05);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: translateY(-2px);
+        }
+        main section .grid article aside span:hover{
+            background: linear-gradient(#FF3F3A, #F75E05);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(1.1);
+        }
         header nav div button{transition: border-radius 0.2s ease-in-out, color 0.2s ease , border 0.3s ease, transform 0.3s ease;}
         header nav div button:hover{
             border: 4px solid black;
@@ -25,9 +37,8 @@
             transform: scale(0.92);
         }
 
-        header section div button{
-            border-image: linear-gradient(#FF3F3A, #F75E05) 1;
-        }
+        header section div button, main section div button{border-image: linear-gradient(#FF3F3A, #F75E05) 1;}
+        main section div article:hover{border-image: linear-gradient(#FF3F3A, #F75E05) 1; border-left: none; border-bottom: none;}
     </style>
 
     <header class="bg-[#FEDAD4]">
@@ -86,17 +97,80 @@
             <aside class="flex flex-col gap-[40px]">
                 <p class="text-[#1E212C] text-[16px] font-[700] flex flex-col gap-[5px]">Who we are<span class="text-[46px] font-[900]">Why Createx?</span></p>
                 <ul class="cursor-none grid gap-[10px] grid-cols-[390px] grid-rows-[52px_26px_52px_26px_26px_52px]">
-                    <li class="hover:shadow-[0_5px_10px_black] transition-all duration-[0.3s] ease-in-out hover:scale-[1.1] flex items-center gap-[10px]"><img src="./Photo/check.png" alt="" class="mt-[-25px]">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
-                    <li class="hover:shadow-[0_5px_10px_black] transition-all duration-[0.3s] ease-in-out hover:scale-[1.1] flex items-center gap-[10px]"><img src="./Photo/check.png" alt="">Vulputate placerat amet pulvinar lorem nisl.</li>
-                    <li class="hover:shadow-[0_5px_10px_black] transition-all duration-[0.3s] ease-in-out hover:scale-[1.1] flex items-center gap-[10px]"><img src="./Photo/check.png" alt="" class="mt-[-25px]">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
-                    <li class="hover:shadow-[0_5px_10px_black] transition-all duration-[0.3s] ease-in-out hover:scale-[1.1] flex items-center gap-[10px]"><img src="./Photo/check.png" alt="">Etiam duis lobortis in fames ultrices commodo nibh.</li>
-                    <li class="hover:shadow-[0_5px_10px_black] transition-all duration-[0.3s] ease-in-out hover:scale-[1.1] flex items-center gap-[10px]"><img src="./Photo/check.png" alt="">Tincidunt sagittis neque sem ac eget.</li>
-                    <li class="hover:shadow-[0_5px_10px_black] transition-all duration-[0.3s] ease-in-out hover:scale-[1.1] flex items-center gap-[10px]"><img src="./Photo/check.png" alt="" class="mt-[-25px]">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
+                    <li class="hover:shadow-[0_5px_10px_lightgray] hover:rounded-[10px] transition-all duration-[0.3s] ease-in-out hover:scale-[1.1] flex items-center gap-[10px]"><img src="./Photo/check.png" alt="" class="mt-[-25px]">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+                    <li class="hover:shadow-[0_5px_10px_lightgray] hover:rounded-[10px] transition-all duration-[0.3s] ease-in-out hover:scale-[1.1] flex items-center gap-[10px]"><img src="./Photo/check.png" alt="">Vulputate placerat amet pulvinar lorem nisl.</li>
+                    <li class="hover:shadow-[0_5px_10px_lightgray] hover:rounded-[10px] transition-all duration-[0.3s] ease-in-out hover:scale-[1.1] flex items-center gap-[10px]"><img src="./Photo/check.png" alt="" class="mt-[-25px]">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+                    <li class="hover:shadow-[0_5px_10px_lightgray] hover:rounded-[10px] transition-all duration-[0.3s] ease-in-out hover:scale-[1.1] flex items-center gap-[10px]"><img src="./Photo/check.png" alt="">Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                    <li class="hover:shadow-[0_5px_10px_lightgray] hover:rounded-[10px] transition-all duration-[0.3s] ease-in-out hover:scale-[1.1] flex items-center gap-[10px]"><img src="./Photo/check.png" alt="">Tincidunt sagittis neque sem ac eget.</li>
+                    <li class="hover:shadow-[0_5px_10px_lightgray] hover:rounded-[10px] transition-all duration-[0.3s] ease-in-out hover:scale-[1.1] flex items-center gap-[10px]"><img src="./Photo/check.png" alt="" class="mt-[-25px]">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
                 </ul>
-                <button style="background: linear-gradient(to right, #FF3F3A, #F75E05);" class="w-[161px] h-[44px] hover:translate-y-[3px] hover:shadow-[0_-5px_10px_black] transition-all duration-[0.3s] ease-in-out rounded-[4px] text-[14px] font-[700] text-white tracking-[0.5px]">More about us</button>
+                <button style="background: linear-gradient(to right, #FF3F3A, #F75E05);" class="w-[161px] h-[44px] hover:translate-y-[3px] hover:shadow-[0_-5px_10px_#FF3F3A] transition-all duration-[0.3s] ease-in-out rounded-[4px] text-[14px] font-[700] text-white tracking-[0.5px]">More about us</button>
             </aside>
         </section>
 
+        <section class="w-[80%] m-auto my-[150px] flex flex-col gap-[50px]">
+            <div class="flex items-center justify-between">
+                <p class="flex flex-col text-[#1E212C] text-[16px] font-[700] tracking-[1px]">Ready to learn?<span class="text-[46px] font-[900]">Featured Courses</span></p>
+                <button style="background: linear-gradient(#FF3F3A,#F75E05); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" class="hover:translate-x-[-5px] mt-[18px] hover:shadow-[5px_5px_10px_#FF3F3A] transition-all duration-[0.2s] ease-in-out border-[1px] w-[148px] h-[52px] rounded-[4px] text-[16px] font-[700] tracking-[0.5px]">View all courses</button>
+            </div>
+
+            <div class="grid grid-rows-[214px_214px_214px] gap-[30px] justify-between grid-cols-[600px_600px]">
+                
+                <article class="cursor-default hover:shadow-[13px_13px_10px_-6px_#FF3F3A] transition-all duration-[0.3s] ease-in-out hover:scale-[1.05] flex items-center gap-[30px] border-[1px] border-[#E5E8ED]">
+                    <img src="./Photo/image1.png" alt="" class="hover:translate-x-[-10px] hover:translate-y-[-10px] hover:shadow-[10px_10px_10px_lightgray] transition-all duration-[0.4s] ease-in-out">
+                    <aside class="flex flex-col gap-[10px]">
+                        <span class="text-white transition-transform duration-[0.3s] ease-in-out w-[80px] h-[23px] rounded-[4px] bg-[#03CEA4] py-[1px] px-[8px] text-[14px] font-[400]">Marketing</span>
+                        <h2 class="text-[#1E212C] transition-transform duration-[0.3s] ease-out text-[20px] font-[700] leading-[30px]">The Ultimate Google Ads Training Course</h2>
+                        <p class="text-[#FF4242] text-[18px] font-[700]">$100<span class="text-[#787A80] text-[18px] font-[400]"> | by Jerome Bell</span></p>
+                    </aside>
+                </article>
+
+                <article class="cursor-default hover:shadow-[13px_13px_10px_-6px_#FF3F3A] transition-all duration-[0.3s] ease-in-out hover:scale-[1.05] flex items-center gap-[30px] border-[1px] border-[#E5E8ED]">
+                    <img src="./Photo/image2.png" alt="" class="hover:translate-x-[-10px] hover:translate-y-[-10px] hover:shadow-[10px_10px_10px_lightgray] transition-all duration-[0.4s] ease-in-out">
+                    <aside class="flex flex-col gap-[20px]">
+                        <span class="text-white transition-transform duration-[0.3s] ease-in-out w-[98px] h-[23px] rounded-[4px] bg-[#5A87FC] py-[1px] px-[8px] text-[14px] font-[400]">Management</span>
+                        <h2 class="text-[#1E212C] transition-transform duration-[0.3s] ease-out text-[20px] font-[700] leading-[30px]">Prduct Management Fundamentals</h2>
+                        <p class="text-[#FF4242] text-[18px] font-[700]">$480<span class="text-[#787A80] text-[18px] font-[400]"> | by Marvin McKinney</span></p>
+                    </aside>
+                </article>
+
+                <article class="cursor-default hover:shadow-[13px_13px_10px_-6px_#FF3F3A] transition-all duration-[0.3s] ease-in-out hover:scale-[1.05] flex items-center gap-[30px] border-[1px] border-[#E5E8ED]">
+                    <img src="./Photo/image3.png" alt="" class="hover:translate-x-[-10px] hover:translate-y-[-10px] hover:shadow-[10px_10px_10px_lightgray] transition-all duration-[0.4s] ease-in-out">
+                    <aside class="flex flex-col gap-[10px]">
+                        <span class="text-white transition-transform duration-[0.3s] ease-in-out w-[80px] h-[23px] rounded-[4px] bg-[#03CEA4] py-[1px] px-[8px] text-[14px] font-[400]">Marketing</span>
+                        <h2 class="text-[#1E212C] transition-transform duration-[0.3s] ease-out text-[20px] font-[700] leading-[30px]">The Ultimate Google Ads Training Course</h2>
+                        <p class="text-[#FF4242] text-[18px] font-[700]">$100<span class="text-[#787A80] text-[18px] font-[400]"> | by Jerome Bell</span></p>
+                    </aside>
+                </article>
+
+                <article class="cursor-default hover:shadow-[13px_13px_10px_-6px_#FF3F3A] transition-all duration-[0.3s] ease-in-out hover:scale-[1.05] flex items-center gap-[30px] border-[1px] border-[#E5E8ED]">
+                    <img src="./Photo/image1.png" alt="" class="hover:translate-x-[-10px] hover:translate-y-[-10px] hover:shadow-[10px_10px_10px_lightgray] transition-all duration-[0.4s] ease-in-out">
+                    <aside class="flex flex-col gap-[10px]">
+                        <span class="text-white transition-transform duration-[0.3s] ease-in-out w-[80px] h-[23px] rounded-[4px] bg-[#03CEA4] py-[1px] px-[8px] text-[14px] font-[400]">Marketing</span>
+                        <h2 class="text-[#1E212C] transition-transform duration-[0.3s] ease-out text-[20px] font-[700] leading-[30px]">The Ultimate Google Ads Training Course</h2>
+                        <p class="text-[#FF4242] text-[18px] font-[700]">$100<span class="text-[#787A80] text-[18px] font-[400]"> | by Jerome Bell</span></p>
+                    </aside>
+                </article>
+
+                <article class="cursor-default hover:shadow-[13px_13px_10px_-6px_#FF3F3A] transition-all duration-[0.3s] ease-in-out hover:scale-[1.05] flex items-center gap-[30px] border-[1px] border-[#E5E8ED]">
+                    <img src="./Photo/image1.png" alt="" class="hover:translate-x-[-10px] hover:translate-y-[-10px] hover:shadow-[10px_10px_10px_lightgray] transition-all duration-[0.4s] ease-in-out">
+                    <aside class="flex flex-col gap-[10px]">
+                        <span class="text-white transition-transform duration-[0.3s] ease-in-out w-[80px] h-[23px] rounded-[4px] bg-[#03CEA4] py-[1px] px-[8px] text-[14px] font-[400]">Marketing</span>
+                        <h2 class="text-[#1E212C] transition-transform duration-[0.3s] ease-out text-[20px] font-[700] leading-[30px]">The Ultimate Google Ads Training Course</h2>
+                        <p class="text-[#FF4242] text-[18px] font-[700]">$100<span class="text-[#787A80] text-[18px] font-[400]"> | by Jerome Bell</span></p>
+                    </aside>
+                </article>
+
+                <article class="cursor-default hover:shadow-[13px_13px_10px_-6px_#FF3F3A] transition-all duration-[0.3s] ease-in-out hover:scale-[1.05] flex items-center gap-[30px] border-[1px] border-[#E5E8ED]">
+                    <img src="./Photo/image1.png" alt="" class="hover:translate-x-[-10px] hover:translate-y-[-10px] hover:shadow-[10px_10px_10px_lightgray] transition-all duration-[0.4s] ease-in-out">
+                    <aside class="flex flex-col gap-[10px]">
+                        <span class="text-white transition-transform duration-[0.3s] ease-in-out w-[80px] h-[23px] rounded-[4px] bg-[#03CEA4] py-[1px] px-[8px] text-[14px] font-[400]">Marketing</span>
+                        <h2 class="text-[#1E212C] transition-transform duration-[0.3s] ease-out text-[20px] font-[700] leading-[30px]">The Ultimate Google Ads Training Course</h2>
+                        <p class="text-[#FF4242] text-[18px] font-[700]">$100<span class="text-[#787A80] text-[18px] font-[400]"> | by Jerome Bell</span></p>
+                    </aside>
+                </article>
+            </div>
+        </section>
     </main>
 
 </body>
