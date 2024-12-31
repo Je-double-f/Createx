@@ -48,7 +48,93 @@
         </section>
     </header>
 
+    <main>
+        <section class="w-[80%] m-auto my-[100px] flex flex-col justify-between">
+            <article class="flex items-center gap-[20px]">
+                <div class="cursor-pointer hover: w-[62px] hover:bg-black h-[62px] flex items-center justify-center bg-[#FF3F3A] rounded-full"><i class="hover:text-[#FF3F3A] hover:scale-[1.3] transition-all dration-[0.2s] ease-in-out text-white text-[19px] fa-solid fa-play"></i></div>
+                <p class="text-[#1E212C] text-[14px] font-[700]">Watch Video</p>
+            </article><br>
+            <article class="flex justify-between gap-[20px] relative">
+                <img src="./IMG S/image.png" alt="" class="w-[750px] h-[450px]">
+                <img src="./IMG S/dots.png" alt="" class="absolute bottom-[-50px] left-[-60px] z-[-1]">
+                <img src="./IMG S/shapes.png" alt="" class="absolute right-[-120px] bottom-[-100px]">
+                <aside class="flex flex-col justify-center gap-[15px]">
+                    <div class="flex items-center gap-[10px]">
+                        <span class="font-bold text-[rgba(255,63,58,1)] text-[48px]">1200</span>
+                        <span class="font-semibold text-[18px]">students graduated</span>
+                    </div>
+                    
+                    <div class="flex items-center gap-[10px]">
+                        <span class="font-bold text-[rgba(255,63,58,1)] text-[48px]">84</span>
+                        <span class="font-semibold text-[18px]">completed courses</span>
+                    </div>
+                    
+                    <div class="flex items-center gap-[10px]">
+                        <span class="font-bold text-[rgba(255,63,58,1)] text-[48px]">16</span>
+                        <span class="font-semibold text-[18px]">qualified tutors</span>
+                    </div>
+                    
+                    <div class="flex items-center gap-[10px]">
+                        <span class="font-bold text-[rgba(255,63,58,1)] text-[48px]">5</span>
+                        <span class="font-semibold text-[18px]">years of experience</span>
+                    </div>
+                </aside>
+            </article>
+        </section>
+
+        <section class="w-[80%] m-auto my-[150px]">
+            <h1 id="text-gradient" class="text-[#1E212C] text-center flex flex-col text-[46px] font-[900]"><span class="text-[16px] font-[700] tracking-[1px]">WE ALWAYS STAND FOR</span>Our core values</h1>
+            <section class="flex gap-[15px] justify-between my-[50px]">
+                <div class="flex flex-col justify-center items-center gap-[10px] text-center w-[23%] rounded-[4px] hover:translate-y-[-3px] hover:shadow-[0_5px_5px_#FF3F3A] transition-all duration-[0.2s] ease-out hover:border-[1px] hover:border-[#FF3F3A]">
+                    <img src="./IMG S/ic-structure.png" alt="">
+                    <h3 class="font-semibold text-[18px]">Structured Approach</h3>
+                    <p class="text-[rgba(120,122,128,1)]">Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris. </p>
+                </div>
+                <img src="./IMG S/divider.png" alt="">
+
+                <div class="flex flex-col justify-center items-center gap-[10px] text-center w-[23%] rounded-[4px] hover:translate-y-[-3px] hover:shadow-[0_5px_5px_#FF3F3A] transition-all duration-[0.2s] ease-out hover:border-[1px] hover:border-[#FF3F3A]">
+                    <img src="./IMG S/ic-chat.png" alt="">
+                    <h3 class="font-semibold text-[18px]">Professional Feedbacks</h3>
+                    <p class="text-[rgba(120,122,128,1)]">Culpa nostrud commodo ea consequat reprehenderit aliquip. </p>
+                </div>
+                <img src="./IMG S/divider.png" alt="">
+
+                <div class="flex flex-col justify-center items-center gap-[10px] text-center w-[23%] rounded-[4px] hover:translate-y-[-3px] hover:shadow-[0_5px_5px_#FF3F3A] transition-all duration-[0.2s] ease-out hover:border-[1px] hover:border-[#FF3F3A]">
+                    <img src="./IMG S/ic-target.png" alt="">
+                    <h3 class="font-semibold text-[18px]">Efficiency</h3>
+                    <p class="text-[rgba(120,122,128,1)]">Viverra scelerisque consequat net. Adipisicing esse consequat. </p>
+                </div>
+                <img src="./IMG S/divider.png" alt="">
+
+                <div class="flex flex-col justify-center items-center gap-[10px] text-center w-[23%] rounded-[4px] hover:translate-y-[-3px] hover:shadow-[0_5px_5px_#FF3F3A] transition-all duration-[0.2s] ease-out hover:border-[1px] hover:border-[#FF3F3A]">
+                    <img src="./IMG S/ic-calendar.png" alt="">
+                    <h3 class="font-semibold text-[18px]">Flexible Shedule</h3>
+                    <p class="text-[rgba(120,122,128,1)]">Aute eiusmod dolore dolore deserunt veniam ad deserunt. </p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+
     <style>
+        #text-gradient{
+            color: transparent;
+            background: radial-gradient(circle, #1E212C, #1E212C, #FF3F3A, #F75E05, #F75E05, #FF3F3A);
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-size: 400%;
+            animation: gradientShift 17s infinite linear;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 400% 400%;
+            }
+        }
+
         header nav div ul li:hover, header nav div div:hover{
             background: linear-gradient(#FF3F3A, #F75E05);
             -webkit-background-clip: text;

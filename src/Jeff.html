@@ -19,6 +19,15 @@
             animation: gradientShift 8s infinite linear;
         }
 
+        #text-gradient-hover:hover{
+            color: transparent;
+            background: radial-gradient(circle, #1E212C, #1E212C, #FF3F3A, #F75E05, #F75E05, #FF3F3A);
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-size: 400%;
+            animation: gradientShift 4s infinite linear;
+        }
+
         @keyframes gradientShift {
         0% {
             background-position: 0% 0%;
@@ -58,9 +67,7 @@
             transform: translate(0, -3px);
             text-shadow: 1px 12px 2px #9A9CA5;
         }
-        main #s4 div div button:hover{
-            background: linear-gradient(#FF3F3A, #F75E05);
-        }
+        main #s4 div div button:hover{background: linear-gradient(#FF3F3A, #F75E05) 1;}
         header section div button, main section div button{border-image: linear-gradient(#FF3F3A, #F75E05) 1;}
         main section .grid article:hover{border-image: linear-gradient(#FF3F3A, #F75E05) 1; border-left: none; border-bottom: none;}
     </style>
@@ -70,17 +77,17 @@
             <div class="flex items-center gap-[60px]">
                 <img src="./Photo/logo.png" alt="">
                 <ul class="text-[16px] text-[#424551] font-[700] flex items-center gap-[40px]">
-                    <li class="transition-all duration-[0.2s] ease-in-out"><a href="">About us</a></li>
-                    <li class="transition-all duration-[0.2s] ease-in-out"><a href="">Courses</a></li>
-                    <li class="transition-all duration-[0.2s] ease-in-out"><a href="">Events</a></li>
-                    <li class="transition-all duration-[0.2s] ease-in-out"><a href="">Blog</a></li>
-                    <li class="transition-all duration-[0.2s] ease-in-out"><a href="">Contacts</a></li>
+                    <li id="text-gradient-hover" class="transition-all duration-[0.2s] ease-in-out"><a href="">About us</a></li>
+                    <li id="text-gradient-hover" class="transition-all duration-[0.2s] ease-in-out"><a href="">Courses</a></li>
+                    <li id="text-gradient-hover" class="transition-all duration-[0.2s] ease-in-out"><a href="">Events</a></li>
+                    <li id="text-gradient-hover" class="transition-all duration-[0.2s] ease-in-out"><a href="">Blog</a></li>
+                    <li id="text-gradient-hover" class="transition-all duration-[0.2s] ease-in-out"><a href="">Contacts</a></li>
                 </ul>
             </div>
             <div class="flex items-center gap-[30px]">
                 <button style="background: linear-gradient(#FF3F3A, #F75E05);" class="w-[207px] h-[52px] rounded-[4px] text-[16px] font-[700] tracking-[0.5px] text-white ">Get consultation</button>
                 <div class="flex py-[10px] text-[#424551] items-center gap-[20px]">
-                    <i class="transition-all duration-[0.3s] ease-in-out text-[20px] fa-regular fa-user"></i>
+                    <i id="text-gradient-hover" class="transition-all duration-[0.3s] ease-in-out text-[20px] fa-regular fa-user"></i>
                     <a href="" class="text-[16px] font-[700] hover:underline hover:scale-[1.05] transition-all duration-[0.2s] ease-in-out">Log in/Register</a>
                 </div>
             </div>
@@ -225,21 +232,56 @@
             </div>
         </section>
 
-        <section id="s4" class="relative bg-[#FDDDCF]">
-            <div class="w-[80%] m-auto py-[80px]">
-                <h1 id="text-gradient" class="text-[#1E212C] text-center flex flex-col text-[46px] font-[900]"><span class="text-[16px] font-[700] tracking-[1px]">OUR EVENTS</span>Lectures & workshops</h1>
-                <div class="grid w-[100%] rounded-[4px] py-[20px] gap-[40px] bg-white justify-center items-center grid-rows-[62px] grid-cols-[52px_100px_757px_136px]">
-                    <h1 class="text-[#FF3F3A] text-[48px] tracking-[1px] font-[900]">05</h1>
-                    <p class="flex flex-col text-[#1E212C] text-[20px] font-[700]">August <span class="text-[#787A80] text-[16px] font-[400]">11:00 – 14:00</span></p>
-                    <p class="flex flex-col text-[#1E212C] text-[20px] font-[700]">Formation of the organizational structure of the company in the face of uncertainty. <span class="text-[#787A80] text-[16px] font-[400]">Onine master-class</span></p>
-                    <button class="border-[1px] rounded-[4px] border-[#FF3F3A] text-[#FF3F3A] hover:text-white w-[136px] h-[44px]">View more</button>
+        <section id="s4" class="relative py-[80px] bg-[#FDDDCF]">
+            <div class="w-[80%] m-auto flex flex-col items-center gap-[20px]">
+                <h1 id="text-gradient" class="text-[#1E212C] mb-[50px] text-center flex flex-col text-[46px] font-[900]"><span class="text-[16px] font-[700] tracking-[1px]">OUR EVENTS</span>Lectures & workshops</h1>
+                
+                <div class="hover:shadow-[0_12px_10px_-8px_#FF3F3A] hover:translate-y-[-6px] transition-transform duration-[0.3s] ease-in-out grid w-[100%] rounded-[4px] py-[20px] justify-evenly bg-white items-center grid-rows-[62px] grid-cols-[55px_100px_757px_136px]">
+                    <h1 id="text-gradient" class="text-[#FF3F3A] justify-self-start text-[48px] tracking-[1px] font-[900]">05</h1>
+                    <p class="flex flex-col gap-[7px] text-[#1E212C] text-[20px] font-[700]">August <span class="text-[#787A80] text-[16px] font-[400]">11:00 – 14:00</span></p>
+                    <p class="flex flex-col gap-[7px] text-[#1E212C] text-[20px] font-[700]">Formation of the organizational structure of the company in the face of uncertainty. <span class="text-[#787A80] text-[16px] font-[400]">Onine master-class</span></p>
+                    <button class="border-[1px] hover:translate-x-[3px] hover:translate-y-[-3px] hover:shadow-[-5px_5px_10px_#FF3F3A] transition-all duration-[0.3s] ease-in-out rounded-[4px] border-[#FF3F3A] text-[#FF3F3A] hover:text-white w-[136px] h-[44px] text-[14px] font-[700] tracking-[0.5px]">View more</button>
+                </div>
+
+                <div class="hover:shadow-[0_12px_10px_-8px_#FF3F3A] hover:translate-y-[-6px] transition-transform duration-[0.3s] ease-in-out grid w-[100%] rounded-[4px] py-[20px] justify-evenly bg-white items-center grid-rows-[62px] grid-cols-[52px_100px_757px_136px]">
+                    <h1 id="text-gradient" class="text-[#FF3F3A] justify-self-start text-[48px] tracking-[1px] font-[900]">24</h1>
+                    <p class="flex flex-col gap-[7px] text-[#1E212C] text-[20px] font-[700]">July <span class="text-[#787A80] text-[16px] font-[400]">11:00 – 12:30</span></p>
+                    <p class="flex flex-col gap-[7px] text-[#1E212C] text-[20px] font-[700]">Building a customer service department. Best Practices. <span class="text-[#787A80] text-[16px] font-[400]">Onine lecture</span></p>
+                    <button class="border-[1px] hover:translate-x-[3px] hover:translate-y-[-3px] hover:shadow-[-5px_5px_10px_#FF3F3A] transition-all duration-[0.3s] ease-in-out rounded-[4px] border-[#FF3F3A] text-[#FF3F3A] hover:text-white w-[136px] h-[44px] text-[14px] font-[700] tracking-[0.5px]">View more</button>
+                </div>
+
+                <div class="hover:shadow-[0_12px_10px_-8px_#FF3F3A] hover:translate-y-[-6px] transition-transform duration-[0.3s] ease-in-out grid w-[100%] rounded-[4px] py-[20px] justify-evenly bg-white items-center grid-rows-[62px] grid-cols-[52px_100px_757px_136px]">
+                    <h1 id="text-gradient" class="text-[#FF3F3A] justify-self-start text-[48px] tracking-[1px] font-[900]">16</h1>
+                    <p class="flex flex-col gap-[7px] text-[#1E212C] text-[20px] font-[700]">July <span class="text-[#787A80] text-[16px] font-[400]">10:00 – 13:00</span></p>
+                    <p class="flex flex-col gap-[7px] text-[#1E212C] text-[20px] font-[700]">How to apply methods of speculative design in practice. Worldbuilding prototyping. <span class="text-[#787A80] text-[16px] font-[400]">Onine workshop</span></p>
+                    <button class="border-[1px] hover:translate-x-[3px] hover:translate-y-[-3px] hover:shadow-[-5px_5px_10px_#FF3F3A] transition-all duration-[0.3s] ease-in-out rounded-[4px] border-[#FF3F3A] text-[#FF3F3A] hover:text-white w-[136px] h-[44px] text-[14px] font-[700] tracking-[0.5px]">View more</button>
                 </div>
             </div>
-            <div>
-                <h2></h2>
-                <button></button>
+
+            <div class="flex mt-[80px] justify-center items-center gap-[30px]">
+                <h2 class="text-[#1E212C] text-[28px] font-[700]">Do you want more?</h2>
+                <button style="background: linear-gradient(#FF3F3A, #F75E05);" class="w-[215px] hover:text-[12px] hover:font-[300] hover:scale-[1.06] transition-all duration-[0.2s] ease-in-out h-[52px] rounded-[4px] text-[16px] font-[700] tracking-[0.5px] text-white">Explore all events</button>
             </div>
             <img src="./Photo/dots.png" alt="" class="absolute left-0 bottom-0">
+        </section>
+
+        <section id="s6" class="w-[80%] m-auto py-[100px] flex items-center relative z-[0]">
+            <aside class="flex flex-col items-start gap-[30px]">
+                <h1 class="flex flex-col gap-[10px] items-start text-[16px] font-[700] tracking-[1px]">CREATEX CERTIFICATE<span class="text-[46px] font-[900] leading-[50px]">Your expertise will <br> be confirmed</span></h1>
+                <p class="text-[#424551] text-[16px] font-[400]">We are accredited by international professional <br> organizations and institutes:</p>
+                <div class="flex items-center gap-[20px]">
+                    <img class="transition-all duration-[0.3s] ease-in-out hover:border-[1px] hover:border-[lightgray] hover:shadow-[5px_5px_10px_lightgray] hover:translate-y-[-5px] hover:translate-x-[-5px]" src="./Photo/logo-1.png" alt="">
+                    <img class="transition-all duration-[0.3s] ease-in-out hover:border-[1px] hover:border-[lightgray] hover:shadow-[5px_5px_10px_lightgray] hover:translate-y-[-5px] hover:translate-x-[-5px]" src="./Photo/logo(1).png" alt="">
+                    <img class="transition-all duration-[0.3s] ease-in-out hover:border-[1px] hover:border-[lightgray] hover:shadow-[5px_5px_10px_lightgray] hover:translate-y-[-5px] hover:translate-x-[-5px]" src="./Photo/logo(2).png" alt="">
+                </div>
+            </aside>
+            <img src="./Photo/image-1.png" alt="" class="absolute hover:scale-[1.05] transition-transform duratoin-[0.5s] ease-in-out right-[-70px] bottom-[-200px] z-[1]">
+        </section>
+        
+        <section class="bg-[#F4F5F6]">
+            <div class="w-[80%] m-auto">
+                <h1>Best tutors are all here<span>Meet our team</span></h1>
+            </div>
         </section>
     </main>
 
