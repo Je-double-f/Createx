@@ -67,6 +67,9 @@
             transform: translate(0, -3px);
             text-shadow: 1px 12px 2px #9A9CA5;
         }
+        #image-shadow:hover{
+            background: linear-gradient(to bottom, #1E212C00 0%, #1E212C00 3%, #1E212C00 33%, black 150%, black 200%, black 200%, black 200%);
+        }
         main #s4 div div button:hover{background: linear-gradient(#FF3F3A, #F75E05) 1;}
         header section div button, main section div button{border-image: linear-gradient(#FF3F3A, #F75E05) 1;}
         main section .grid article:hover{border-image: linear-gradient(#FF3F3A, #F75E05) 1; border-left: none; border-bottom: none;}
@@ -278,9 +281,65 @@
             <img src="./Photo/image-1.png" alt="" class="absolute hover:scale-[1.05] transition-transform duratoin-[0.5s] ease-in-out right-[-70px] bottom-[-200px] z-[1]">
         </section>
         
-        <section class="bg-[#F4F5F6]">
-            <div class="w-[80%] m-auto">
-                <h1>Best tutors are all here<span>Meet our team</span></h1>
+        <section id="s7" class="bg-[#F4F5F6] pt-[180px] pb-[100px]">
+            <div class="w-[80%] m-auto flex flex-col gap-[50px]">
+                <div class="flex items-end justify-between">
+                    <h1 class="flex flex-col text-[16px] text-[#1E212C] font-[700] tracking-[1px]">Best tutors are all here<span class="text-[46px] font-[900]">Meet our team</span></h1>
+                    <div class="flex text-[20px] text-black items-center">
+                        <div class="w-[48px] h-[48px] cursor-pointer transition-all duration-[0.2s] ease-in-out hover:translate-x-[-5px] hover:text-white hover:bg-[#FF3F3A] rounded-full flex justify-center items-center"><i class="fa-solid fa-arrow-left-long"></i></div>
+                        <div class="w-[48px] h-[48px] cursor-pointer transition-all duration-[0.2s] ease-in-out hover:translate-x-[5px] hover:text-white hover:bg-[#FF3F3A] rounded-full flex justify-center items-center"><i class="fa-solid fa-arrow-right-long"></i></div>
+                    </div>
+                </div>
+                
+                <div class="flex items-center justify-between">
+                    <article class="w-[285px] h-[416px] flex flex-col gap-[10px]">
+                        <div id="image-shadow" class="bg-[#FFCF2D] transition-all duration-[0.4s] ease-in-out hover:shadow-[10px_10px_10px_#FFCF2D] hover:translate-x-[-10px] hover:translate-y-[-10px] w-[285px] h-[340px] flex items-end justify-center relative z-[0]">
+                            <img src="./Photo/imag4.png" alt="">
+                            <div  class="absolute bottom-[15px] right-[25px] flex text-white text-[20px] items-center gap-[20px]">
+                                <i id="text-gradient-hover" onclick="location.href='https://www.facebook.com/'" class="hover:scale-[1.5] transition-transform duration-[0.2s] ease-in-out cursor-pointer fa-brands fa-facebook-f"></i>
+                                <i id="text-gradient-hover" onclick="location.href='https://www.instagram.com/'" class="hover:scale-[1.5] transition-transform duration-[0.2s] ease-in-out cursor-pointer fa-brands fa-instagram"></i>
+                                <i id="text-gradient-hover" onclick="location.href='https://ru.linkedin.com/'" class="hover:scale-[1.5] transition-transform duration-[0.2s] ease-in-out cursor-pointer fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                        <h2 id="text-gradient" class="text-[#424551] flex flex-col items-center text-[20px] font-[700]">Dianne Russell<span class="text-[#787A80] text-[16px] font-[400]">Founder and CEO</span></h2>
+                    </article>
+
+                    <article class="w-[285px] h-[416px] flex flex-col gap-[10px]">
+                        <div id="image-shadow" class="bg-[#FFCF2D] transition-all duration-[0.4s] ease-in-out hover:shadow-[10px_10px_10px_#FFCF2D] hover:translate-x-[-10px] hover:translate-y-[-10px] w-[285px] h-[340px] flex items-end justify-center relative z-[0]">
+                            <img src="./Photo/imag.png" alt="">
+                            <div  class="absolute bottom-[15px] right-[25px] flex text-white text-[20px] items-center gap-[20px]">
+                                <i id="text-gradient-hover" onclick="location.href='https://www.facebook.com/'" class="hover:scale-[1.5] transition-transform duration-[0.2s] ease-in-out cursor-pointer fa-brands fa-facebook-f"></i>
+                                <i id="text-gradient-hover" onclick="location.href='https://www.instagram.com/'" class="hover:scale-[1.5] transition-transform duration-[0.2s] ease-in-out cursor-pointer fa-brands fa-instagram"></i>
+                                <i id="text-gradient-hover" onclick="location.href='https://ru.linkedin.com/'" class="hover:scale-[1.5] transition-transform duration-[0.2s] ease-in-out cursor-pointer fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                        <h2 id="text-gradient" class="text-[#424551] flex flex-col items-center text-[20px] font-[700]">Jerome Bell<span class="text-[#787A80] text-[16px] font-[400]">Founder and Program Director</span></h2>
+                    </article>
+
+                    <article class="w-[285px] h-[416px] flex flex-col gap-[10px]">
+                        <div id="image-shadow" class="bg-[#FFCF2D] transition-all duration-[0.4s] ease-in-out hover:shadow-[10px_10px_10px_#FFCF2D] hover:translate-x-[-10px] hover:translate-y-[-10px] w-[285px] h-[340px] flex items-end justify-center relative z-[0]">
+                            <img src="./Photo/imag2.png" alt="">
+                            <div  class="absolute bottom-[15px] right-[25px] flex text-white text-[20px] items-center gap-[20px]">
+                                <i id="text-gradient-hover" onclick="location.href='https://www.facebook.com/'" class="hover:scale-[1.5] transition-transform duration-[0.2s] ease-in-out cursor-pointer fa-brands fa-facebook-f"></i>
+                                <i id="text-gradient-hover" onclick="location.href='https://www.instagram.com/'" class="hover:scale-[1.5] transition-transform duration-[0.2s] ease-in-out cursor-pointer fa-brands fa-instagram"></i>
+                                <i id="text-gradient-hover" onclick="location.href='https://ru.linkedin.com/'" class="hover:scale-[1.5] transition-transform duration-[0.2s] ease-in-out cursor-pointer fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                        <h2 id="text-gradient" class="text-[#424551] flex flex-col items-center text-[20px] font-[700]">Kristin Watson<span class="text-[#787A80] text-[16px] font-[400]">Marketer, Curator of Marketing Course</span></h2>
+                    </article>
+
+                    <article class="w-[285px] h-[416px] flex flex-col gap-[10px]">
+                        <div id="image-shadow" class="bg-[#FFCF2D] transition-all duration-[0.4s] ease-in-out hover:shadow-[10px_10px_10px_#FFCF2D] hover:translate-x-[-10px] hover:translate-y-[-10px] w-[285px] h-[340px] flex items-end justify-center relative z-[0]">
+                            <img src="./Photo/imag3.png" alt="">
+                            <div  class="absolute bottom-[15px] right-[25px] flex text-white text-[20px] items-center gap-[20px]">
+                                <i id="text-gradient-hover" onclick="location.href='https://www.facebook.com/'" class="hover:scale-[1.5] transition-transform duration-[0.2s] ease-in-out cursor-pointer fa-brands fa-facebook-f"></i>
+                                <i id="text-gradient-hover" onclick="location.href='https://www.instagram.com/'" class="hover:scale-[1.5] transition-transform duration-[0.2s] ease-in-out cursor-pointer fa-brands fa-instagram"></i>
+                                <i id="text-gradient-hover" onclick="location.href='https://ru.linkedin.com/'" class="hover:scale-[1.5] transition-transform duration-[0.2s] ease-in-out cursor-pointer fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                        <h2 id="text-gradient" class="text-[#424551] flex flex-col items-center text-[20px] font-[700]">Marvin McKinney<span class="text-[#787A80] text-[16px] font-[400]">PM, Curator of Management Course</span></h2>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
