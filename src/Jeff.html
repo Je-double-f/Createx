@@ -28,6 +28,11 @@
             animation: gradientShift 4s infinite linear;
         }
 
+        #button-gradient-hover:hover{
+            background: radial-gradient(circle, #1E212C, #1E212C, #FF3F3A, #F75E05, #F75E05, #FF3F3A);
+            background-size: 400%;
+            animation: gradientShift 4s infinite linear;
+        }
         @keyframes gradientShift {
         0% {
             background-position: 0% 0%;
@@ -340,6 +345,13 @@
                         <h2 id="text-gradient" class="text-[#424551] flex flex-col items-center text-[20px] font-[700]">Marvin McKinney<span class="text-[#787A80] text-[16px] font-[400]">PM, Curator of Management Course</span></h2>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <section class="w-[80%] m-auto my-[150px]">
+            <div>
+                <h1 class="flex flex-col items-start text-[#1E212C] text-[46px] font-[900]"><span class="text-[16px] font-[700] tracking-[1px]">OUR BLOG</span>Latest posts</h1>
+                <button id="button-gradient-hover" class="w-[158px] h-[52px] hover:shadow-[5px_5px_10px_#F75E05] hover:translate-x-[-5px] bg-[#F75E05] transition-all duration-[0.2s] ease-in-out hover:translate-y-[-5px] text-white text-[16px] font-[700] tracking-[0.5px] rounded-[4px]">Go to blog</button>
             </div>
         </section>
     </main>
