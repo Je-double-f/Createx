@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-['Lato']">
+    <style>
+        header nav div ul li:hover,
+        header nav div div:hover {
+            background: linear-gradient(#FF3F3A, #F75E05);
+           
+            -webkit-text-fill-color: transparent;
+            transform: translate(2px, 3px);
+            text-shadow: 10px 13px 2px black;
+        }
+
+        header nav div button {
+            transition: border-radius 0.2s ease-in-out, color 0.2s ease, border 0.3s ease, transform 0.3s ease;
+        }
+
+        header nav div button:hover {
+            border: 4px solid black;
+            border-radius: 100px;
+            color: black;
+            transform: scale(0.92);
+        }
+
+        header section div button {
+            border-image: linear-gradient(#FF3F3A, #F75E05) 1;
+        }
+    </style>
+    <header class="w-[100%] m-auto bg-orange-200 h-[400px]">
+        <nav class="py-[20px] w-[80%] m-auto flex items-center justify-between">
+            <div class="flex items-center gap-[60px]">
+                <img src="./Photo/logo.png" alt="">
+                <ul class="text-[16px] text-[#424551] font-[700] flex items-center gap-[40px]">
+                    <li class="transition-all duration-[0.2s] ease-in-out"><a href="">About us</a></li>
+                    <li class="transition-all duration-[0.2s] ease-in-out"><a href="">Courses</a></li>
+                    <li class="transition-all duration-[0.2s] ease-in-out"><a href="">Events</a></li>
+                    <li class="transition-all duration-[0.2s] ease-in-out"><a href="">Blog</a></li>
+                    <li class="transition-all duration-[0.2s] ease-in-out"><a href="">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-[30px]">
+                <button style="background: linear-gradient(#FF3F3A, #F75E05);"
+                    class="w-[207px] h-[52px] rounded-[4px] text-[16px] font-[700] tracking-[0.5px] text-white ">Get
+                    consultation</button>
+                <div class="flex py-[10px] text-[#424551] items-center gap-[20px]">
+                    <i class="transition-all duration-[0.3s] ease-in-out text-[20px] fa-regular fa-user"></i>
+                    <a href=""
+                        class="text-[16px] font-[700] hover:underline hover:scale-[1.05] transition-all duration-[0.2s] ease-in-out">Log
+                        in/Register</a>
+                </div>
+            </div>
+        </nav>
+        <section class="place-self-center mt-[90px] ">
+            <h2 class="text-center text-orange-400">Online lecture</h2>
+            <h2 class="font-bold text-[30px] w-[700px] text-center">Formation of the organizational structure of the company in the face of uncertainty
+
+            </h2>
+        </section>
+    </header>
+<main>
+    <section class="flex max-w-[1200px] m-auto justify-center mt-[200px] gap-[50px]">
+        <aside>
+            
+            <h2 class="font-bold text-[40px]">We will talk about:</h2>
+            <div class=" mt-[40px] justify-center">
+                <p class="flex gap-[20px] font-bold"><span class="flex gap-[10px] text-orange-500"><img
+                            class="h-[2px] w-[20px] place-self-center" src="./photo sino/minus.png" alt=""> theme
+                        1.</span>Aliquet lectus urna viverra in odio.</p>
+                <p class="w-[400px] text-gray-500 mt-[30px] ml-[20px]">Nulla amet, sagittis potenti rhoncus sit.
+                    Elit lectus nec pulvinar aliquet donec enim, ornare.
+                    Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed.
+                    Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae
+                    accumsan id.</p>
+            </div>
+            <div class="mt-[30px]">
+                <p class="flex gap-[20px] font-bold "><span class="flex gap-[10px] text-orange-500"><img
+                            class="h-[20px] w-[20px] place-self-center" src="./photo sino/Plus.png" alt=""> theme
+                        2.</span>Orci commodo, viverra orci mollis ut euismod.</p>
+                <p class="flex gap-[20px] font-bold mt-[10px]"><span class="flex gap-[10px] text-orange-500"><img
+                            class="h-[20px] w-[20px] place-self-center" src="./photo sino/Plus.png" alt=""> theme
+                        3.</span>Sagittis vitae facilisi rutrum amet mauris quisque vel.</p>
+                <p class="flex gap-[20px] font-bold mt-[10px]"><span class="flex gap-[10px] text-orange-500"><img
+                            class="h-[20px] w-[20px] place-self-center" src="./photo sino/Plus.png" alt=""> theme
+                        4.</span>In id dolor quis nunc, urna hendrerit pharetra.</p>
+              
+               
+
+            </div>
+        </aside>
+        <aside class="place-self-center">
+            <div class="w-[495px] h-[500px] border-solid border-[1px] p-[20px] focus:border-blue-400 shadow-lg">
+                <h1 class="font-bold">Time</h1>
+                <h2 class="font-bold text-[30px] text-[#FF3F3A]">August 5,11:00-14:00</h2>
+                <p class="mt-[5px] text-gray-500">Metus turpis sit lorem lacus, in elit tellus lacus.</p>
+               
+                <h1 class=" mt-[50px] font-bold">Price</h1>
+                <h2 class="font-bold text-[30px] text-[#FF3F3A] ">$120 per month</h2>
+                <p class="mt-[5px] text-gray-500">Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris
+                    quam ac elit tristique dis.</p>
+                    <p class="mt-[40px] text-[#FF3F3A] text-[20px]">Event on Facebook</p>
+                <button style="background: linear-gradient(#FF3F3A, #F75E05);"
+                    class="w-[450px] h-[52px] rounded-[4px] text-[16px] font-[700] tracking-[0.5px] text-white mt-[40px]">Join
+                    the event</button>
+            </div>
+        </aside>
+    </section>
+    <section class="mt-[200px] flex max-w-[1200px] m-auto gap-[50px] justify-center">
+        <aside><img class="w-[450px]" src="./photo sino/Снимок экрана 2025-01-01 022713.png" alt=""></aside>
+        <aside class="place-self-center">
+            <h1 class="font-bold text-[20px]">Speaker</h1>
+            <h2 class="font-bold text-[40px]"> Cody Fisher</h2>
+            <p class="text-gray-500">Senior UX designer in IT Product Company</p>
+            <div class="mt-[50px]">
+                <p class="mt-[10px] font-bold flex"> <img class="w-[20px] h-[20px]" src="./photo sino/Star.png"
+                        alt="">4.9 rate</p>
+                <p class="mt-[10px] font-bold flex"> <img class="w-[20px] h-[20px]" src="./photo sino/Play.png"
+                        alt="">4 courses</p>
+                <p class="mt-[10px] font-bold flex"><img class="w-[20px] h-[20px]" src="./photo sino/Profile.png"
+                        alt="">350 students</p>
+            </div>
+            <p class="w-[500px] mt-[50px] text-gray-500">Mattis adipiscing aliquam eu proin metus a iaculis
+                faucibus. Tempus curabitur venenatis, vulputate
+                venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit
+                morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed
+                pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam
+                tristique sollicitudin interdum quam. </p>
+            <div class="flex">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-behance"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </aside>
+
+    </section>
+    <section class="flex w-[80%] m-auto mt-[100px] justify-center gap-[40px]">
+        <aside>
+            <h1 class="font-bold">For whom?</h1>
+            <h2 class="font-bold text-[40px]">Who will benefit from the course:</h2>
+        </aside>
+        <aside>
+            <p class="flex mt-[10px] gap-[5px]  text-gray-500"> <img class="w-[20px] h-[20px]"
+                    src="./photo sino/check.png" alt=""> Specialists with more than 1 year of active work experience
+            </p>
+            <p class="flex mt-[10px] gap-[5px]  text-gray-500 w-[400px]"> <img class="w-[20px] h-[20px]"
+                    src="./photo sino/check.png" alt=""> Mobile app designers who want to improve their skills in
+                solving business problems, creating and testing human-centered interfaces</p>
+            <p class="flex mt-[10px] gap-[5px]  text-gray-500"> <img class="w-[20px] h-[20px]"
+                    src="./photo sino/check.png" alt=""> Professional designers who want to feel more confident in
+                UX</p>
+           
+        </aside>
+    </section>
+    <section class="bg-orange-100 flex w-[80%] m-auto mt-[90px] p-[50px] justify-center gap-[30px] rounded-[5px]">
+<aside><img class="w-[300px]" src="photo sino/111.png" alt=""></aside>
+<aside>
+    <h2 class="font-bold text-[30px]">Don't want to miss the best events?</h2>
+    <h2 class="font-bold text-[30px]">Subscribe to our newsletter</h2>
+    <div>
+        <input class="p-[15px] w-[400px]" type="text" placeholder="Your working email">
+        <button style="background: linear-gradient(#FF3F3A, #F75E05);"
+                    class="w-[200px] h-[52px] rounded-[4px] text-[16px] font-[700] tracking-[0.5px] text-white mt-[40px]">Subscribe
+                    </button>
+      
+    </div>
+    <p class="mt-[20px] text-gray-500">I agree to recieve comunicftions from Createx Online School</p>
+</aside>
+    </section>
+    <section class="flex max-w-[1200px] m-auto justify-center mt-[200px] bg-gray-200 place-self-center gap-[50px] p-[20px]">
+        <aside class="place-self-center justify-center">
+            <div>
+                <h1 class="text-[20px]">Dont Miss Event</h1>
+                <h2 class="font-bold text-[40px]">Leave a request</h2>
+            </div>
+            <div class="place-self-center flex-col mt-[30px]">
+                <p class="text-gray-500">Full name</p>
+                <input class="p-[10px] w-[400px]" type="text" placeholder="Your Full Name">
+            </div>
+            <div class="place-self-center mt-[30px]">
+                <p class="text-gray-500">Email</p>
+                <input class="p-[10px] w-[400px]" type="text" placeholder="Your working email">
+            </div>
+            <div class="place-self-center mt-[30px]">
+                <p class="text-gray-500">Phone</p>
+                <input class="p-[10px] w-[400px]" type="text" placeholder="Your phone number">
+            </div>
+            <button style="background: linear-gradient(#FF3F3A, #F75E05);"
+                class="w-[400px] h-[52px] rounded-[4px] text-[16px] font-[700] tracking-[0.5px] text-white mt-[32px] place-self-center">Join
+                the event</button>
+                <p class="text-gray-500">You will receive a link to the online lecture in an email after registration.</p>
+    </div>
+    </aside>
+    <aside ><img class="w-[500px] place-self-center mt-[30px]" src="./photo sino/22222.png" alt=""></aside>
+    </section>
+    <section class="mb-[80px]">
+        <div class="flex justify-between max-w-[1200px] m-auto mt-[100px] place-self-center">
+
+            <div>
+                <h1 class="font-bold">Check other online events</h1>
+                <h2 class="font-bold text-[30px]">You may be interested in</h2>
+            </div>
+            <div class="place-self-center"><img src="./photo sino/idle.png" alt=""></div>
+        </div>
+        <div class="flex max-w-[1200px] m-auto justify-center mt-[50px] gap-[50px]">
+            <article class="border-solid border-2 border-gray-200 p-[20px]" >
+                <h2 class="text-[#FF3F3A] font-bold text-[25px]">05Aug</h2>
+                <p class="text-gray-500">11:00-14:00</p>
+                <h2 class="mt-[10px] font-bold">Formation of the organiational structure of the company in the face of uncertainty</h2>
+                <p class="mt-[10px] text-gray-500">Online master-class</p>
+                <button 
+                class="w-[350px] h-[52px] rounded-[4px] text-[16px] font-[700] tracking-[0.5px] text-[#FF3F3A] mt-[30px] border-solid border-2 border-red-400">View
+                more</button>
+            </article>
+            <article class="border-solid border-2 border-gray-200 p-[20px]" >
+                <h2 class="text-[#FF3F3A] font-bold text-[25px]">24Jul</h2>
+                <p class="text-gray-500">11:00-12:30</p>
+                <h2 class="mt-[10px] font-bold">Formation of the organiational structure of the company in the face of uncertainty</h2>
+                <p class="mt-[10px] text-gray-500">Online lecture</p>
+                <button 
+                class="w-[350px] h-[52px] rounded-[4px] text-[16px] font-[700] tracking-[0.5px] text-[#FF3F3A] mt-[30px] border-solid border-2 border-red-400">View
+                more</button>
+            </article>
+            <article class="border-solid border-2 border-gray-200 p-[20px]">
+                <h2 class="text-[#FF3F3A] font-bold text-[25px]">10Jul</h2>
+                <p class="text-gray-500">09:00-14:00</p>
+                <h2 class="mt-[10px] font-bold">Formation of the organiational structure of the company in the face of uncertainty</h2>
+                <p class="mt-[10px] text-gray-500">Online workshop</p>
+                <button 
+                class="w-[350px] h-[52px] rounded-[4px] text-[16px] font-[700] tracking-[0.5px] text-[#FF3F3A] mt-[30px] border-solid border-2 border-red-400">View
+                more</button>
+            </article>
+        </div>
+        <div class="flex max-w-[1200px] m-auto mt-[60px] justify-center gap-[30px] ">
+            <h2 class="place-self-center font-bold text-[25px]">Do you want more courses?</h2>
+            <button style="background: linear-gradient(#FF3F3A, #F75E05);"
+                class="w-[207px] h-[52px] rounded-[4px] text-[16px] font-[700] tracking-[0.5px] text-white ">View
+                all courses</button>
+        </div>
+    </section>
+</main>
+    <footer class="bg-[#1E212C]">
+        <div class="w-[80%] m-auto pt-[80px] pb-[50px] text-white flex items-start justify-between">
+            <div class="w-[280px] flex flex-col items-start gap-[30px]">
+                <img src="./Photo/logo-end.png" alt="" class="mb-[-5px]">
+                <p class="text-[#A5A6AB] text-[12px] font-[400]">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country. </p>
+                <div class="text-[#A5A6AB] text-[22px] flex items-center gap-[25px]">
+                    <i onclick="location.href='https://www.facebook.com/'" class="hover:text-white hover:scale-[1.3] transition-all duration-[0.3s] ease-in-out fa-brands fa-facebook-f"></i>
+                    <i onclick="location.href='https://x.com/?mx=2'" class="hover:text-white hover:scale-[1.3] transition-all duration-[0.3s] ease-in-out fa-brands fa-twitter"></i>
+                    <i onclick="location.href='https://www.youtube.com/'" class="hover:text-white hover:scale-[1.3] transition-all duration-[0.3s] ease-in-out fa-brands fa-youtube"></i>
+                    <i onclick="location.href='https://telegram.org/'" class="hover:text-white hover:scale-[1.3] transition-all duration-[0.3s] ease-in-out fa-brands fa-telegram"></i>
+                    <i onclick="location.href='https://www.instagram.com/'" class="hover:text-white hover:scale-[1.3] transition-all duration-[0.3s] ease-in-out fa-brands fa-instagram"></i>
+                    <i onclick="location.href='https://ru.linkedin.com/'" class="hover:text-white hover:scale-[1.3] transition-all duration-[0.3s] ease-in-out fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+            <ul class="text-[16px] font-[400] text-[#A5A6AB] flex flex-col gap-[8px]">
+                <h2 class="text-[16px] text-white font-[700] tracking-[1px]">SITE MAP</h2>
+                <li class="hover:text-white transition-colors duration-[0.2s] ease-in-out"><a href="">About Us</a></li>
+                <li class="hover:text-white transition-colors duration-[0.2s] ease-in-out"><a href="">Courses</a></li>
+                <li class="hover:text-white transition-colors duration-[0.2s] ease-in-out"><a href="">Events</a></li>
+                <li class="hover:text-white transition-colors duration-[0.2s] ease-in-out"><a href="">Blog</a></li>
+                <li class="hover:text-white transition-colors duration-[0.2s] ease-in-out"><a href="">Contacts</a></li>
+            </ul>
+            <ul class="text-[16px] font-[400] text-[#A5A6AB] flex flex-col gap-[8px]">
+                <h2 class="text-white text-[16px] font-[700] tracking-[1px]">COURSES</h2>
+                <li class="hover:text-white transition-colors duration-[0.2s] ease-in-out"><a href="">Marketing</a></li>
+                <li class="hover:text-white transition-colors duration-[0.2s] ease-in-out"><a href="">Management</a></li>
+                <li class="hover:text-white transition-colors duration-[0.2s] ease-in-out"><a href="">HR & Recruting</a></li>
+                <li class="hover:text-white transition-colors duration-[0.2s] ease-in-out"><a href="">Design</a></li>
+                <li class="hover:text-white transition-colors duration-[0.2s] ease-in-out"><a href="">Development</a></li>
+            </ul>
+            <ul class="flex flex-col items-start gap-[8px]">
+                <h2 class="text-[16px] font-[700] tracking-[1px]">CONTACT US</h2>
+                <div class="flex items-center gap-[10px] text-[#A5A6AB]">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <p class="text-[16px] font-[400]">(405) 555-0128</p>
+                </div>
+                <div class="flex items-center gap-[10px] text-[#A5A6AB]">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p class="text-[16px] font-[400]">hello@createx.com</p>
+                </div>
+            </ul>
+            <div class="flex flex-col gap-[20px] w-[286px]">
+                <h2 class="text-[16px] font-[700] tracking-[1px]">SIGN UP TO OUR NEWSLETTER</h2>
+                <form action="" class="border-[1px] bg-[#393C46] border-[#61636B] flex items-center justify-between w-[286px] h-[36px] rounded-[4px]">
+                    <input type="email" placeholder="Email address" class="pl-[10px] placeholder-[#A5A6AB] bg-transparent outline-none h-[100%] text-[12px] font-[400]">
+                    <i id="text-gradient-hover" class="text-[14px] cursor-pointer hover:scale-[1.1] mr-[15px] fa-solid fa-arrow-right-long"></i>
+                </form>
+                <p class="text-[10px] font-[400] mt-[-10px] text-white">*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+            </div>
+        </div>
+
+        <div class="bg-[#292C37] text-white">
+            <div class="w-[80%] m-auto py-[18px] flex items-center justify-between">
+                <p class="flex items-center gap-[5px] text-[12px] font-[400]">© All rights reserved. Made with <i id="text-gradient" class="text-[18px] fa-regular fa-heart"></i> by Createx Studio </p>
+                <h1 id="text-gradient" class="uppercase text-[14px] font-[700] hover:scale-[1.1] transition-transform duration-[0.1s] ease-in-out cursor-pointer"><a href="">GO TO TOP</a></h1>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
