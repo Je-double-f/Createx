@@ -657,6 +657,10 @@ video {
   margin-top: 200px;
 }
 
+.mt-\[20px\] {
+  margin-top: 20px;
+}
+
 .mt-\[300px\] {
   margin-top: 300px;
 }
@@ -701,14 +705,6 @@ video {
   margin-top: ;
 }
 
-.mt-\[20px\] {
-  margin-top: 20px;
-}
-
-.mt-\[400px\] {
-  margin-top: 400px;
-}
-
 .flex {
   display: flex;
 }
@@ -727,6 +723,10 @@ video {
 
 .h-\[2px\] {
   height: 2px;
+}
+
+.h-\[344px\] {
+  height: 344px;
 }
 
 .h-\[350px\] {
@@ -765,24 +765,16 @@ video {
   height: 8px;
 }
 
-.h-\[344px\] {
-  height: 344px;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[30px\] {
-  height: 30px;
-}
-
 .w-\[100\%\] {
   width: 100%;
 }
 
 .w-\[111px\] {
   width: 111px;
+}
+
+.w-\[1200px\] {
+  width: 1200px;
 }
 
 .w-\[136px\] {
@@ -881,20 +873,20 @@ video {
   width: 98px;
 }
 
-.w-\[1200px\] {
-  width: 1200px;
-}
-
 .w-\[\] {
   width: ;
 }
 
-.w-\[80\] {
-  width: 80;
+.w-\[100px\] {
+  width: 100px;
 }
 
 .max-w-\[1200px\] {
   max-width: 1200px;
+}
+
+.max-w-\[\] {
+  max-width: ;
 }
 
 .transform {
@@ -1001,10 +993,6 @@ video {
   gap: 7px;
 }
 
-.gap-\[\] {
-  gap: ;
-}
-
 .place-self-start {
   place-self: start;
 }
@@ -1023,6 +1011,18 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-\[\] {
+  border-radius: ;
+}
+
+.rounded-\[10px\] {
+  border-radius: 10px;
+}
+
+.rounded-\[5px\] {
+  border-radius: 5px;
 }
 
 .border {
@@ -1092,6 +1092,11 @@ video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
 }
 
+.bg-green-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 239 172 / var(--tw-bg-opacity, 1));
+}
+
 .bg-orange-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 215 170 / var(--tw-bg-opacity, 1));
@@ -1100,6 +1105,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
 }
 
 .p-\[10px\] {
@@ -1114,12 +1124,16 @@ video {
   padding: 30px;
 }
 
+.p-\[50px\] {
+  padding: 50px;
+}
+
 .p-\[\] {
   padding: ;
 }
 
-.p-\[50px\] {
-  padding: 50px;
+.p-\[5px\] {
+  padding: 5px;
 }
 
 .px-\[8px\] {
@@ -1226,6 +1240,10 @@ video {
 
 .text-\[64px\] {
   font-size: 64px;
+}
+
+.text-\[25px\] {
+  font-size: 25px;
 }
 
 .font-\[400\] {
