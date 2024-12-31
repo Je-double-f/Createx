@@ -33,6 +33,7 @@
             background-size: 400%;
             animation: gradientShift 4s infinite linear;
         }
+
         @keyframes gradientShift {
         0% {
             background-position: 0% 0%;
@@ -348,24 +349,64 @@
             </div>
         </section>
 
-        <section class="w-[80%] m-auto my-[150px]">
+        <section class="w-[80%] m-auto my-[150px] flex flex-col gap-[50px]">
             <div class="flex items-center justify-between">
                 <h1 class="flex flex-col items-start text-[#1E212C] text-[46px] font-[900]"><span class="text-[16px] font-[700] tracking-[1px]">OUR BLOG</span>Latest posts</h1>
-                <button id="button-gradient-hover" class="mt-[20px] w-[158px] h-[52px] hover:shadow-[5px_5px_10px_#F75E05] hover:translate-x-[-5px] bg-[#F75E05] transition-all duration-[0.2s] ease-in-out hover:translate-y-[-5px] text-white text-[16px] font-[700] tracking-[0.5px] rounded-[4px]">Go to blog</button>
+                <button style="transition: transform 0.3s ease;" id="button-gradient-hover" class="mt-[20px] w-[158px] h-[52px] hover:shadow-[5px_5px_10px_#F75E05] hover:translate-x-[-5px] bg-[#F75E05] hover:translate-y-[-5px] text-white text-[16px] font-[700] tracking-[0.5px] rounded-[4px]">Go to blog</button>
             </div>
 
-            <div>
-                <div class="relative">
-                    <img src="" alt="">
-                    <p class="absolute"></p>
+            <div class="flex items-center justify-between">
+
+                <div class="grid grid-cols-[390px] gap-[10px] grid-rows-[300px_21px_60px_52px_24px]">
+                    <div class="relative hover:translate-x-[-10px] hover:translate-y-[-10px] transition-all duration-[0.3s] ease-in-out hover:shadow-[10px_10px_10px_lightgray]">
+                        <img src="./Photo/img (5).png" alt="">
+                        <p id="text-gradient-hover" class="bg-white rounded-[4px] px-[8px] text-[#424551] text-[14px] font-[400] absolute top-[12px] left-[12px] cursor-pointer hover:scale-[1.2] transition-transform duration-[0.2s] ease-in-out"><i class="fa-solid fa-microphone"></i> Podcast</p>
+                    </div>
+                    <p id="text-gradient" class="flex items-center gap-[10px] text-[#787A80] text-[14px] font-[400]">
+                        <span>Marketing</span> | <i class="fa-regular fa-calendar"></i> <span>September 4, 2020</span> | <i class="fa-regular fa-clock"></i> 36 min
+                    </p>
+                    <h3 class="text-[#1E212C] text-[20px] font-[700] leading-[30px]">What is traffic arbitrage and does it really make money?</h3>
+                    <p class="text-[#424551] text-[16px] font-[400] leading-[26px]">Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...</p>
+                    <div class="flex items-center gap-[10px] cursor-pointer">
+                        <p id="text-gradient-hover" class="text-[#1E212C] text-[16px] font-[700] transition-all duration-[0.1s] ease-in-out hover:border-b-[2px] hover:border-b-[#F75E05] py-[2px]">Listen</p>
+                        <i class="hover:scale-[1.3] hover:text-[#F75E05] transition-all duration-[0.2s] ease-in-out text-[17px] fa-solid fa-arrow-right-long"></i>
+                    </div>
                 </div>
-                <p></p>
-                <h3></h3>
-                <p></p>
-                <div>
-                    <p></p>
-                    <i class="fa-solid fa-arrow-right-long"></i>
+
+
+                <div class="grid grid-cols-[390px] gap-[10px] grid-rows-[300px_21px_60px_52px_24px]">
+                    <div class="relative hover:translate-x-[-10px] hover:translate-y-[-10px] transition-all duration-[0.3s] ease-in-out hover:shadow-[10px_10px_10px_lightgray]">
+                        <img src="./Photo/img1.png" alt="">
+                        <p id="text-gradient-hover" class="bg-white rounded-[4px] px-[8px] text-[#424551] text-[14px] font-[400] absolute top-[12px] left-[12px] cursor-pointer hover:scale-[1.2] transition-transform duration-[0.2s] ease-in-out"><i class="fa-regular fa-circle-play"></i> Video</p>
+                    </div>
+                    <p id="text-gradient" class="flex items-center gap-[10px] text-[#787A80] text-[14px] font-[400]">
+                        <span>Management</span> | <i class="fa-regular fa-calendar"></i> <span>August 25, 2020</span> | <i class="fa-regular fa-clock"></i> 45 min
+                    </p>
+                    <h3 class="text-[#1E212C] text-[20px] font-[700] leading-[30px]">What to do and who to talk to if you want to get feedback on the product</h3>
+                    <p class="text-[#424551] text-[16px] font-[400] leading-[26px]">Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus...</p>
+                    <div class="flex items-center gap-[10px] cursor-pointer">
+                        <p id="text-gradient-hover" class="text-[#1E212C] text-[16px] font-[700] transition-all duration-[0.1s] ease-in-out hover:border-b-[2px] hover:border-b-[#F75E05] py-[2px]">Watch</p>
+                        <i class="hover:scale-[1.3] hover:text-[#F75E05] transition-all duration-[0.2s] ease-in-out text-[17px] fa-solid fa-arrow-right-long"></i>
+                    </div>
                 </div>
+
+
+                <div class="grid grid-cols-[390px] gap-[10px] grid-rows-[300px_21px_60px_52px_24px]">
+                    <div class="relative hover:translate-x-[-10px] hover:translate-y-[-10px] transition-all duration-[0.3s] ease-in-out hover:shadow-[10px_10px_10px_lightgray]">
+                        <img src="./Photo/img.png" alt="">
+                        <p id="text-gradient-hover" class="bg-white rounded-[4px] px-[8px] text-[#424551] text-[14px] font-[400] absolute top-[12px] left-[12px] cursor-pointer hover:scale-[1.2] transition-transform duration-[0.2s] ease-in-out"><i class="fa-regular fa-file-lines"></i> Article</p>
+                    </div>
+                    <p id="text-gradient" class="flex items-center gap-[10px] text-[#787A80] text-[14px] font-[400]">
+                        <span>Design</span> | <i class="fa-regular fa-calendar"></i> <span>August 8, 2020</span> | <i class="fa-regular fa-clock"></i>
+                    </p>
+                    <h3 class="text-[#1E212C] text-[20px] font-[700] leading-[30px]">Should you choose a creative profession if you are attracted to creativity?</h3>
+                    <p class="text-[#424551] text-[16px] font-[400] leading-[26px]">Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...</p>
+                    <div class="flex items-center gap-[10px] cursor-pointer">
+                        <p id="text-gradient-hover" class="text-[#1E212C] text-[16px] font-[700] transition-all duration-[0.1s] ease-in-out hover:border-b-[2px] hover:border-b-[#F75E05] py-[2px]">Read</p>
+                        <i class="hover:scale-[1.3] hover:text-[#F75E05] transition-all duration-[0.2s] ease-in-out text-[17px] fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
