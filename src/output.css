@@ -1050,6 +1050,18 @@ video {
   grid-template-columns: 600px 600px;
 }
 
+.grid-cols-\[380px\] {
+  grid-template-columns: 380px;
+}
+
+.grid-cols-\[370px\] {
+  grid-template-columns: 370px;
+}
+
+.grid-cols-\[360px\] {
+  grid-template-columns: 360px;
+}
+
 .grid-rows-\[214px_214px_214px\] {
   grid-template-rows: 214px 214px 214px;
 }
