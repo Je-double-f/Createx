@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <style>
+        #text-gradient{
+            color: transparent;
+            background: radial-gradient(circle, #1E212C, #1E212C, #FF3F3A, #F75E05, #F75E05, #FF3F3A);
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-size: 400%;
+            animation: gradientShift 8s infinite linear;
+        }
+
+        #text-gradient-hover:hover{
+            color: transparent;
+            background: radial-gradient(circle, #1E212C, #1E212C, #FF3F3A, #F75E05, #F75E05, #FF3F3A);
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-size: 400%;
+            animation: gradientShift 4s infinite linear;
+        }
+
+        #button-gradient-hover:hover{
+            background: radial-gradient(circle, #1E212C, #1E212C, #FF3F3A, #F75E05, #F75E05, #FF3F3A);
+            background-size: 400%;
+            animation: gradientShift 4s infinite linear;
+        }
+
+        @keyframes gradientShift {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 400% 400%;
+        }
+
+        }
+        header nav div ul li:hover, header nav div div:hover{
+            background: linear-gradient(#FF3F3A, #F75E05);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: translate(2px, 3px);
+            text-shadow: 10px 13px 2px black;
+        }
+        main section .grid article aside h2:hover, main section .grid article aside span:hover{
+            background: linear-gradient(#FF3F3A, #F75E05);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: translateY(-2px);
+        }
+        main section .grid article aside span:hover{
+            background: linear-gradient(#FF3F3A, #F75E05);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(1.1);
+        }
+        header nav div button{transition: border-radius 0.2s ease-in-out, color 0.2s ease , border 0.3s ease, transform 0.3s ease;}
+        header nav div button:hover{
+            border: 4px solid black;
+            border-radius: 100px;
+            color: black;
+            transform: scale(0.92);
+        }
+        main section #s3 article p:hover, main section #s3 article i:hover{
+            transform: translate(0, -3px);
+            text-shadow: 1px 12px 2px #9A9CA5;
+        }
+        #image-shadow:hover{
+            background: linear-gradient(to bottom, #1E212C00 0%, #1E212C00 3%, #1E212C00 33%, black 150%, black 200%, black 200%, black 200%);
+        }
+        main #s4 div div button:hover{background: linear-gradient(#FF3F3A, #F75E05) 1;}
+        header section div button, main section div button{border-image: linear-gradient(#FF3F3A, #F75E05) 1;}
+        main section .grid article:hover{border-image: linear-gradient(#FF3F3A, #F75E05) 1; border-left: none; border-bottom: none;}
+    </style>
+    <header class="flex justify-center md:gap-[40px] lg:gap-[90px] items-center py-[50px]">
+        <nav class="py-[20px] w-[80%] m-auto flex items-center justify-between">
+            <div class="flex items-center gap-[60px]">
+                <img src="./Photo/logo.png" alt="">
+                <ul class="text-[16px] text-[#424551] font-[700] flex items-center gap-[40px]">
+                    <li id="text-gradient-hover" class="transition-all duration-[0.2s] ease-in-out"><a href="./Siyovush.html">About us</a></li>
+                    <li id="text-gradient-hover" class="transition-all duration-[0.2s] ease-in-out"><a href="./sino.html">Courses</a></li>
+                    <li id="text-gradient-hover" class="transition-all duration-[0.2s] ease-in-out"><a href="./sino2.html">Events</a></li>
+                    <li id="text-gradient-hover" class="transition-all duration-[0.2s] ease-in-out"><a href="">Blog</a></li>
+                    <li id="text-gradient-hover" class="transition-all duration-[0.2s] ease-in-out"><a href="">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-[30px]">
+                <button style="background: linear-gradient(#FF3F3A, #F75E05);" class="w-[207px] h-[52px] rounded-[4px] text-[16px] font-[700] tracking-[0.5px] text-white ">Get consultation</button>
+                <div class="flex py-[10px] text-[#424551] items-center gap-[20px]">
+                    <i id="text-gradient-hover" class="transition-all duration-[0.3s] ease-in-out text-[20px] fa-regular fa-user"></i>
+                    <a href="" class="text-[16px] font-[700] hover:underline hover:scale-[1.05] transition-all duration-[0.2s] ease-in-out">Log in/Register</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <section class="flex justify-center px-[20px]">
+        <div class="flex flex-col gap-[20px]">
+            <p class="text-[20px]">Contact info</p>
+            <h1 class="font-bold text-[40px]">Get in touch</h1>
+            <div class="flex items-start">
+                <img src="./img/Chat.png" alt="">
+                <div>
+                    <p class="text-[gray]">Talk to us:</p>
+                    <p>hello@createx.com</p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <img src="./img/iPhone.png" alt="">
+                <div>
+                    <p class="text-[gray]">Call us:</p>
+                    <p>(405) 555-0128</p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <img src="./img/outline.png" alt="">
+                <div>
+                    <p class="text-[gray]">Address:</p>
+                    <p>   2464 Royal Ln. Mesa, New Jersey 45463, USA</p>
+                </div>
+            </div>
+            <p>Follow us:</p>
+            <div class="flex gap-[20px]">
+                <img src="./img/Facebook.png" alt="">
+                <img src="./img/Twitter.png" alt="">
+                <img src="./img/YouTube.png" alt="">
+                <img src="./img/telegram.png" alt="">
+                <img src="./img/Instagram.png" alt="">
+                <img src="./img/Linked-In.png" alt="">
+            </div>
+        </div>
+        <img src="./img/s1.jpg" alt="">
+    </section>
+    <section class="flex justify-center gap-[30px]">
+        <img src="./img/s3.png" alt="">
+        <div >
+            <p class="text-[20px]">Any questions?</p>
+            <h1 class="font-bold text-[40px]">Drop us a line</h1>
+            <div class="flex flex-col gap-[30px]">
+
+            <div class="flex gap-[20px]">
+                <div>
+                    <p class="text-[gray]">First Name*</p>
+                    <input type="text" placeholder="Your first name"    class="w-[330px] h-[50px] border-[2px] border-gray-400 rounded-[10px]">
+                </div>
+                <div>
+                    <p class="text-[gray]">Last  Name*</p>
+                    <input type="text" placeholder="Your first name"    class="w-[330px] h-[50px] border-[2px] border-gray-400 rounded-[10px]">
+                </div>
+            </div>
+            <div class="flex gap-[20px]">
+                <div>
+                    <p class="text-[gray]">Email*</p>
+                    <input type="text" placeholder="Your working email"    class="w-[330px] h-[50px] border-[2px] border-gray-400 rounded-[10px]">
+                </div>
+                <div>
+                    <p class="text-[gray]">Phone</p>
+                    <input type="text" placeholder="Your phone number"    class="w-[330px] h-[50px] border-[2px] border-gray-400 rounded-[10px]">
+                </div>
+            </div>
+            <div>
+                <p class="text-[gray]">Message*</p>
+                <textarea class="w-[700px] h-[130px] border-[2px] border-[gray] rounded-[9px]" name="" id="" placeholder="Your message"></textarea>
+            </div>
+            <div class="flex gap-[20px]">
+
+                <div class="flex items-start  gap-[20px]">
+                    <input type="checkbox" class="py-[20px] bg-orange-600"> 
+                    <p class="text-[gray]">I agree to receive communications from <br> Createx Online School</p>
+                </div>
+                <button class="w-[340px] h-[50px] bg-orange-600 text-[white] rounded-[10px]">Send message</button>
+            </div>
+        </div>
+
+        </div>
+    </section>
+</body>
+</html>
