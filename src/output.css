@@ -1844,6 +1844,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\] {
+  color: ;
+}
+
 .placeholder-\[\#9A9CA5\]::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(154 156 165 / var(--tw-placeholder-opacity, 1));
